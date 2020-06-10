@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>formulaire</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width,initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+          <link rel="stylesheet" type="text/css" href="stylefrm.css">
+    </head>
+    <body>
+   <div class="section">
+            <h1><span>Your order</span></h1>
+            <form>
+        <input name="name" type="text" placeholder="name"/>
+        <br/>
+        <input name="email" type="email" placeholder="email@example.com" />
+        <br/>
+         <input name="number" type="number" placeholder="phone number"/>
+         <br />
+         <input name="number" type="number" placeholder="credit card number" required  />
+         <br />
+         <input name="address" type="text" placeholder="address" required />
+         <br />
+            </form>
+            <div class="button">
+         <button class="submit" onclick="getConfirmation();" type="submit">➤</button>
+         </div>
+  </div>
+  <script src="script.js"></script>
+    </body>
+</html>
