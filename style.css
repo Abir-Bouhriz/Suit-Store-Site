@@ -53,7 +53,7 @@ nav ul li a {
     padding: 24px 81px;
     color: #000000;
     font-size: 25px;
-    font-family:"times new roman"; 
+    font-family:'Source Sans Pro', sans-serif;; 
     text-decoration: none;
 }
 #welcomeimage{
@@ -67,7 +67,7 @@ nav ul li a {
     border-radius:23px;
 }
 .welcometext{
-    font-family:"times new roman";
+    font-family:'Source Sans Pro', sans-serif;;
     font-size:30px;
     text-indent:10px;
     width: 98%;
@@ -81,7 +81,7 @@ nav ul li a {
 .smart{
     width: 100%;
     margin: auto;
-    font-family:"times new roman";
+    font-family:'Source Sans Pro', sans-serif;;
     font-size:25px;
     text-align:center;
     background-color:#deb887;
@@ -109,7 +109,7 @@ h3{
     text-shadow:3px 3px 4px #deb887;
 }
 .newarrivaltext{
-    font-family:"times new roman";
+    font-family:'Source Sans Pro', sans-serif;;
     text-align:center;
     font-size:30px;
     width: 98%;
@@ -188,7 +188,7 @@ h2{
     border-right:1px solid #000;
     border-left:1px solid #000;
     border-radius:5px;
-    font-family:"times new roman";
+    font-family:'Source Sans Pro', sans-serif;;
     text-align:center;
     font-size:15px;
     margin-top:1px;
