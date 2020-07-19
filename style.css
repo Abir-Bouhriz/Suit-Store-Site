@@ -23,7 +23,8 @@ body{
     left: 20px;
     z-index: 9999;
     height: 28px;
-    width: 28px;outline: none;
+    width: 28px;
+    outline: none;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -94,31 +95,31 @@ span::after{
 }
 
 .menu a:hover{
-    font-size: 35px;
+    font-size: 34px;
     color: #d40b0b;
 }
 
-.title{
-    flex: 0 0 75%;
-    max-width: 75%;
-    padding-left: 35px;
-    top: 50px;
-    left: 50px;
-}
-.title h1{
-    color: #fff;
-    font-size: 5rem;
-    font-family: 'Dancing Script', cursive;
-    letter-spacing: 3px;
-    word-spacing: 5px;
-    position: relative;
-    top: 85px;
-    left: 100px;
-}
-.title img{
-    height: 90px;
-    width: 90px;
-    border-radius: 30%;
-    float: left;
+.logo{
+    width: 100%;
 }
 
+.logo img{
+    height: 400px;
+    width: 600px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+/*end of home page*/
+
+/*start of about us*/
+.about-us{
+    background-image: url(image/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+/*end of about us*/
