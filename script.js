@@ -13,10 +13,23 @@
 //}
 
 
-const iconMenu = document.querySelector('.menu-toggler');
-const menu = document.querySelector('.menu');
+//navbar links
+const navbar = document.querySelector(".navbar");
+      a=navbar.querySelectorAll("a");
 
-iconMenu.addEventListener('click', function(){
-    this.classList.toggle('active');
-    menu.classList.toggle('active');
-})
+      a.forEach(function (element) {
+          element.addEventListener("click",function(){
+              for(let i=0; i<a.length; i++){
+                  a[i].classList.remove("current");
+              }
+              this.classList.add("current")
+              document.querySelector(".navbar").classList.toggle("show");
+          })
+      });
+
+//hamburger
+      const hamburger = document.querySelector(".hamburger");
+
+      hamburger.addEventListener("click",function(){
+          document.querySelector(".navbar").classList.toggle("show");
+      })

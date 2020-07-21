@@ -7,189 +7,93 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
-
 .home-page{
     background-image: url(image/home-bg.jpg);
     background-size: cover;
-    background-position: center;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu-toggler{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 9999;
-    height: 28px;
-    width: 28px;
-    outline: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-span,
-span::after,
-span::before{
-    content: '';
-    position: absolute;
-    width: 28px;
-    height: 2.5px;
-    background: #fafafa;
-    border-radius: 20px;
-    transition: 500ms cubic-bezier(0.77,0,0.175,1);
-}
-
-span::before{
-    top: -8px;
-}
-
-span::after{
-    top: 8px;
-}
-
-.menu-toggler.active > span{
-    background: transparent;
-}
-
-.menu-toggler.active > span::after,
-.menu-toggler.active > span::before{
-    background: #d40b0b;
-    top: 0;
-}
-
-.menu-toggler.menu-toggler.active > span::before{
-    transform: rotate(-225deg);
-}
-
-.menu-toggler.menu-toggler.active > span::after{
-    transform: rotate(225deg);
-}
-
-.menu{
-    position: absolute;
-    z-index: 998;
-    left: -30%;
-    background: #fff;
-    height: 100%;
-    width: 30%;
-    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-    padding: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 300ms left cubic-bezier(0.77,0,0.175,1);
-}
-
-.menu.active{
-    left: 0%;
-}
-
-.menu a{
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    text-decoration: none;
-    color: #000;
-}
-
-.menu a:hover{
-    font-size: 34px;
-    color: #d40b0b;
-}
-
-.logo{
-    width: 100%;
 }
 
 .logo img{
-    height: 500px;
-    width: 550px;
-    margin-left: 70px;
-    margin-bottom: 100px;
+    height: 60px;
+    width: 200px;
+    margin-left: 100px;
+    margin-top: 10px;
 }
-/*end of home page*/
-
-/*start of about us*/
-#about{
-    padding: 5rem 0;
-}
-.about-container{
-    max-width: 1100px;
-    margin: auto;
+#navbar{
+    margin-top: 0;
 }
 
-#about h2{
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 3rem;
+#navbar .container{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    max-width: 98%;
+}
+
+#navbar .container ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+#navbar .container ul li{
+    display: inline-block;
+    margin-left: 35px;
+}
+#navbar .container ul li a{
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 1rem;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 0.25rem 0;
+    transition: border 0.5s;
+}
+
+#navbar .container ul li a:hover,
+#navbar .container ul li a.active{
+    border-top: 2px solid rgb(160, 7, 7);
+    border-bottom: 2px solid rgb(160, 7, 7);
+}
+
+/*showcase*/
+#showcase .container{
+    margin-right: 150px;
+    text-align: right;
+}
+
+#showcase .container .showcase-content{
+    margin-top: 15rem;
+}
+
+#showcase .container .showcase-content h1{
+    font-size: 5.5rem;
+    font-weight: 400;
+    color: #fff;
     font-family: 'Fondamento', cursive;
 }
-#about h2:after{
-    content: '';
-    display: block;
-    margin: 0 auto;
-    margin-top: 1rem;
-    width: 150px;
-    background-color:  #db1818;
-    height: 3px;
-}
-#about h3{
-    font-size: 2rem;
+
+#showcase .container .showcase-content h2{
+    font-size:1.5rem;
+    font-family: 'Fondamento', cursive;
+    font-weight: 400;
+    color: rgb(212, 209, 209);
     margin-bottom: 1.5rem;
-    margin-top: 3rem;
-    word-spacing: 2px;
-    font-family: 'Playfair Display', serif;
+    margin-top: 0.5rem;
+    word-spacing: 5px;
 }
 
-#about p.lead{
-    margin-bottom: 1rem;
-    font-family: 'Playfair Display', serif;
-    font-size: 18px;
-}
-
-#about .about-content{
-    display: flex;
-}
-
-#about .about-text,
-#about .about-image{
-    flex: 1;
-}
-
-#about .about-text{
-    text-align: justify;
-}
-
-#about .about-image img{
-    display: block;
-    margin-left: auto;
-    width: 75%;
-    border-radius: 40px;
-    margin-top: 60px;
-    box-shadow: 0px 0px 12px #444;
-    transform: scale(1.2);
-	transition: .3s ease-in-out;
-}
-
-#about .about-image img:hover{
-    transform: scale(1.4);
-}
-
-#about .social-media a{
-    color: #000;
+.icons a{
+    color: #fff;
     text-decoration: none;
-    padding: 0.8rem;
-    line-height: 3.5rem;
-    z-index: 11;
-    font-size: 25px;
+    padding: 1.2rem;
 }
 
-#about .social-media a:hover{
-    color: #db1818;
+.icons a:hover{
+    color: rgb(160, 7, 7);
     transition: all 0.5s ease-out;
 }
-/*end of about us*/
