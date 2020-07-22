@@ -15,7 +15,7 @@
 
 //navbar links
 const navbar = document.querySelector(".navbar");
-      a=navbar.querySelectorAll("a");
+      a = navbar.querySelectorAll("a");
 
       a.forEach(function (element) {
           element.addEventListener("click",function(){

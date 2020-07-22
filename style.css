@@ -200,7 +200,7 @@ body{
 .team-section{
     background-color: #f1f1f1;
     min-height: 100vh;
-    padding: 70px 15px;
+    padding: 70px 15px 30px;
     margin-top: 5px;
 }
 
@@ -231,6 +231,8 @@ body{
     font-size: 20px;
     text-align: center;
     margin: 15px 0 0;
+    
+    font-family: 'Playfair Display', serif;
 }
 
 .team-section .team-items{
@@ -245,6 +247,7 @@ body{
     flex-basis: calc(25% - 30px);
     max-width: calc(25% - 30px);
     transition: all .5s ease;
+    margin-bottom: 40px;
 }
 
 .team-section .team-items .team-item img{
@@ -264,7 +267,7 @@ body{
     text-align: center;
     padding: 20px 15px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgb(160, 7, 7, 0.5);
+    box-shadow: 0 0 10px #000;
     transition: all .5s ease;
     margin-top: -40px;
 }
@@ -300,17 +303,17 @@ body{
     height: 32px;
     width: 32px;
     background-color: #f1f1f1;
-    color: #000;
+    color: rgb(160, 7, 7);
     border-radius: 50%;
-    border: 1px solid #000;
+    border: 1px solid rgb(160, 7, 7);
     margin: 0 2px;
     text-align: center;
     line-height: 32px;
     font-size: 16px;
+    transition: all .5 ease;
 }
 .team-section .team-items .team-item .team-inner .team-info .social-links a:hover{
-    color: rgb(160, 7, 7);
-    border: 1px solid rgb(160, 7, 7);
+    box-shadow: 0 0 10px rgb(160, 7, 7);
 }
 /*end of our team*/
 
@@ -330,6 +333,17 @@ body{
     .inner-container{
         width: 100%;
         padding: 50px;
+    }
+    .team-section .team-items .team-item{
+        flex-basis: calc(50% - 30px);
+        min-width: calc(50% - 30px);
+    }
+}
+
+@media screen and (max-width:767px){
+    .team-section .team-items .team-item{
+        flex-basis: calc(1000%);
+        min-width: calc(100%);
     }
 }
 
