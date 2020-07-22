@@ -22,27 +22,28 @@ body{
     margin-left: 100px;
     margin-top: 10px;
 }
+
 #navbar{
     margin-top: 0;
 }
 
-#navbar .container{
+#navbar .home-container{
     align-items: center;
     justify-content: space-between;
     display: flex;
     max-width: 98%;
 }
 
-#navbar .container ul{
+#navbar .home-container ul{
     display: flex;
     list-style: none;
     padding: 0;
 }
-#navbar .container ul li{
+#navbar .home-container ul li{
     display: inline-block;
     margin-left: 35px;
 }
-#navbar .container ul li a{
+#navbar .home-container ul li a{
     display: inline-block;
     font-size: 1.5rem;
     text-decoration: none;
@@ -54,31 +55,71 @@ body{
     transition: border 0.5s;
 }
 
-#navbar .container ul li a:hover,
-#navbar .container ul li a.active{
+#navbar .home-container ul li a:hover,
+#navbar .home-container ul li a.active{
     border-top: 2px solid rgb(160, 7, 7);
     border-bottom: 2px solid rgb(160, 7, 7);
 }
+/*navbar other section*/
+#navbar1{
+    margin-top: 0;
+    background-color: black;
+}
+
+#navbar1 .home-container{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    max-width: 98%;
+}
+
+#navbar1 .home-container ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+#navbar1 .home-container ul li{
+    display: inline-block;
+    margin-left: 35px;
+}
+#navbar1 .home-container ul li a{
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 1rem;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 0.25rem 0;
+    transition: border 0.5s;
+}
+
+#navbar1 .home-container ul li a:hover,
+#navbar1 .home-container ul li a.active{
+    border-top: 2px solid rgb(160, 7, 7);
+    border-bottom: 2px solid rgb(160, 7, 7);
+}
+/*end of navbar other section*/
 
 /*showcase*/
-#showcase .container{
+#showcase .home-container{
     margin-right: 150px;
     text-align: right;
 }
 
-#showcase .container .showcase-content{
+#showcase .home-container .showcase-content{
     margin-top: 15rem;
 }
 
-#showcase .container .showcase-content h1{
+#showcase .home-container .showcase-content h1{
     font-size: 5.5rem;
     font-weight: 400;
     color: #fff;
     font-family: 'Fondamento', cursive;
 }
 
-#showcase .container .showcase-content h2{
-    font-size:1.5rem;
+#showcase .home-container .showcase-content h2{
+    font-size: 1.7rem;
     font-family: 'Fondamento', cursive;
     font-weight: 400;
     color: rgb(212, 209, 209);
@@ -96,4 +137,89 @@ body{
 .icons a:hover{
     color: rgb(160, 7, 7);
     transition: all 0.5s ease-out;
+}
+/*end of home page*/
+
+/*start of about us*/
+#about{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    margin-top: 5px;
+}
+
+.about-container{
+    background: url(image/about1.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 50px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Fondamento', cursive;;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.icons-about a{
+    color: #000;
+    text-decoration: none;
+    padding: 1.2rem;
+}
+
+.icons-about a:hover{
+    color: rgb(160, 7, 7);
+    transition: all 0.5s ease-out;
+}
+
+
+
+/*end of about us*/
+
+/*responsive*/
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-container{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-container{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 40px;
+    }
 }
