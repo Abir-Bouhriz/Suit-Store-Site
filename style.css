@@ -200,7 +200,7 @@ body{
 .team-section{
     background-color: #f1f1f1;
     min-height: 100vh;
-    padding: 70px 15px 30px;
+    padding: 70px 15px 100px;
     margin-top: 5px;
 }
 
@@ -231,7 +231,6 @@ body{
     font-size: 20px;
     text-align: center;
     margin: 15px 0 0;
-    
     font-family: 'Playfair Display', serif;
 }
 
@@ -317,6 +316,130 @@ body{
 }
 /*end of our team*/
 
+/*start of testimonials*/
+h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-family: 'Fondamento', cursive;
+    font-weight: 700;
+    background: #f1f1f1;
+}
+.feedback{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    margin-top: 5px;
+    padding: 5px 15px 30px;
+}
+
+.feedback-container{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.feedback-container .box{
+    position: relative;
+    padding: 80px 40px 40px;
+    transition: 0.5s;
+    text-align: center;
+    background: #fff;
+}
+
+.feedback-container .box:hover{
+    background: rgb(160, 7, 7);
+}
+
+.feedback-container .box p{
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+
+.feedback-container .box h4{
+    margin: 20px 0 0;
+    padding: 0;
+    transition: 0.5s;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    color: rgb(160, 7, 7);
+}
+
+.feedback-container .box h4 span{
+    font-weight: 700;
+    font-size: 12px;
+    color: #c5c5c5;
+    transition: 0.5s;
+}
+
+.feedback-container .box:hover h4,
+.feedback-container .box:hover h4 span{
+    color: #fff;
+}
+
+.feedback-container .box .img-box{
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.feedback-container .box:before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    background: url(image/quotes.png);
+    background-size: cover;
+    opacity: 0.05;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.feedback-container .box:hover:before{
+    opacity: 1;
+    transform: translateY(-60px);
+}
+
+.feedback-container .box:after{
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    background: url(image/quotes.png);
+    background-size: cover;
+    opacity: 0.05;
+    pointer-events: none;
+    transition: 0.5s;
+    transform: rotate(180deg) translateY(0px);
+}
+
+.feedback-container .box:hover:after{
+    opacity: 1;
+    transform: rotate(180deg) translateY(-60px);
+}
+
+/*end of testimonials*/
+
 
 /*responsive*/
 @media screen and (max-width:1200px){
@@ -344,6 +467,9 @@ body{
     .team-section .team-items .team-item{
         flex-basis: calc(1000%);
         min-width: calc(100%);
+    }
+    .feedback-container .box{
+        margin-top: 80px;
     }
 }
 
