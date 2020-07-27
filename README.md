@@ -8,7 +8,7 @@ A website represent a Suit Store for a  new way to secure the perfect fit.
 * JavaScript
 * Sublime Text ( Text editor )
 ## ScreenShots:
-<img src="screenshots/screenshot4.jpg" />
-<img src="screenshots/screenshot2.jpg" />
-<img src="screenshots/screenshot1.jpg" />
-<img src="screenshots/screenshot3.jpg" />
+<img src="screenshots/1.png" />
+<img src="screenshots/2.png" />
+<img src="screenshots/3.png" />
+<img src="screenshots/4.png" />
