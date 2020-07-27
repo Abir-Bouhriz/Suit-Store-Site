@@ -593,11 +593,20 @@ body{
 /*end of new arrival*/
 
 /*start our collection*/
+:root{ --main-color: #e74c3c; }
 .collection-container{
     margin-top: 50px;
 }
+.collection-container h1{
+    font-family: 'Fondamento', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(160, 7, 7);
+    padding-bottom: 30px;
+}
 .product-grid{
     position: relative;
+    margin-top: 20px;
 }
 .product-grid .product-image{
     overflow: hidden;
@@ -704,6 +713,54 @@ body{
     font-size: 22px;
     transition: all 0.3s;
 }
+.product-grid .social li a:hover { color: var(--main-color); }
+.product-grid .social li a:before,
+ .product-grid .social li a:after{
+    content: attr(data-tip);
+    color: #000;
+    background: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    white-space: nowrap;
+    display: none;
+    transform: translateY(-50%);
+    position: absolute;
+    left: 33px;
+    top: 50%;
+    transition: all 0.3s;
+}
+.product-grid .social li a:after{
+    content: '';
+    background: linear-gradient(-45deg, #fff 49%, transparent 50%);
+    width: 10px;
+    height: 10px;
+    top: 40%;
+    left: 20px;
+}
+.product-grid .social li a:hover:before,
+.product-grid .social li a:hover:after{
+      display: block;
+}
+.product-grid .product-content{ padding: 12px 0; }
+.product-grid .title{
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0 0 5px;
+}
+.product-grid .title a{ color: #959595; }
+.product-grid .title a:hover{ color: var(--main-color); }
+.product-grid .price{
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+}
+.product-grid .price span{
+    color: #333;
+    text-decoration: line-through;
+    margin-right: 3px;
+}
+.product-grid .price.discount{ color: var(--main-color); }
 /*end our collection*/
 
 /*start of contact*/
@@ -882,6 +939,10 @@ input[type="submit"]{
         flex-basis: calc(50% - 30px);
         min-width: calc(50% - 30px);
     }
+}
+
+@media only screen and (max-width:990px){
+    .product-grid{ margin-bottom: 30px; }
 }
 
 @media screen and (max-width:767px){
