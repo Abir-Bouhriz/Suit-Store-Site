@@ -61,7 +61,10 @@ header{
     border-top: 2px solid rgb(160, 7, 7);
     border-bottom: 2px solid rgb(160, 7, 7);
   }
-  
+  .navigation-menu a.active{
+    border-top: 2px solid rgb(160, 7, 7);
+    border-bottom: 2px solid rgb(160, 7, 7);
+}
   .navigation-menu i{
     margin-right: 8px;
     font-size: 16px;
