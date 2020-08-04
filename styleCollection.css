@@ -36,15 +36,14 @@ header{
     text-transform: uppercase;
     font-size: 14px;
     padding: 12px 20px;
-    border-radius: 4px;
+    border-radius: 5px;
     transition: .3s linear;
     font-family: 'Fondamento', cursive;
   }
   
   .navigation-menu a:hover{
-    background: #fff;
-    color: #2f3640;
-    transform: scale(1.1);
+    border-top: 2px solid rgb(160, 7, 7);
+    border-bottom: 2px solid rgb(160, 7, 7);
   }
   .navigation-menu a.active{
     border-top: 2px solid rgb(160, 7, 7);
@@ -283,3 +282,7 @@ header{
     margin-right: 3px;
 }
 .product-grid .price.discount{ color: var(--main-color); }
+
+.product-content .fa{
+    color: #feca57;
+}
