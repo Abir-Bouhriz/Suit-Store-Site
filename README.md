@@ -13,3 +13,6 @@ A website represent a Suit Store for a  new way to secure the perfect fit.
 <img src="screenshots/4.png" />
 <img src="screenshots/5.png" />
 <img src="screenshots/3.png" />
+
+## Contribution:
+Feel free to fork this project and add whatever you like. If you have any suggestions or any comments please feel free to contact me or to open an issue.
